@@ -1,0 +1,201 @@
+/* for mobile view */
+@media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
+  .nav_bar {
+    text-align: right; }
+    .nav_bar img {
+      float: left; }
+
+  .menu {
+    margin: 0 30px 0 0;
+    display: none; }
+    .menu a {
+      text-decoration: none;
+      color: black;
+      margin: 0 10px;
+      line-height: 70px;
+      display: block;
+      text-align: center;
+      clear: right; }
+    .menu a:hover {
+      color: #e38f84; }
+
+  label {
+    margin: 0 40px 0 0;
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    float: right; }
+
+  #toggle {
+    display: none; }
+
+  #toggle:checked + .menu {
+    display: block; }
+
+  input {
+    margin-left: 20%; }
+
+  button img {
+    width: 12px;
+    height: 12px; }
+
+  h1, h2 {
+    color: #ff728a; }
+
+  .footer li {
+    margin-bottom: 20px;
+    list-style: none; }
+  .footer a {
+    margin-top: 20px;
+    color: black;
+    text-decoration: none; }
+    .footer a:hover {
+      color: #ff728a; }
+
+  .footer2 {
+    background-color: #ff728a;
+    height: 30px;
+    padding: 5px; } }
+/* for laptop view */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  h1, h2, h3 {
+    color: #ff728a; }
+
+  hr {
+    color: #ff728a; }
+
+  button {
+    background-color: #0000005e;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px; }
+    button:hover {
+      background-color: #ff728a;
+      padding-right: 30px; }
+
+  .aboutPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-top: 40px; }
+    .aboutPage .about1 {
+      grid-column: 1/1;
+      grid-row: 1/2; }
+    .aboutPage .about_pic1 {
+      grid-column: 2/2;
+      grid-row: 1/2; }
+    .aboutPage .about2 {
+      grid-column: 2/2;
+      grid-row: 2/3;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 5px;
+      height: 20vh; }
+      .aboutPage .about2 .heading2 {
+        grid-column: 1/3;
+        grid-row: 1/2; }
+      .aboutPage .about2 .vision {
+        grid-column: 1/1;
+        grid-row: 2/3; }
+      .aboutPage .about2 .mission {
+        grid-column: 2/2;
+        grid-row: 2/3; }
+      .aboutPage .about2 .OurHelp {
+        grid-column: 1/1;
+        grid-row: 3/4; }
+      .aboutPage .about2 .support {
+        grid-column: 2/2;
+        grid-row: 3/4; }
+    .aboutPage .about_pic2 {
+      grid-column: 1/1;
+      grid-row: 2/3; }
+
+  .meet_our_team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px; }
+    .meet_our_team .emma_picture {
+      grid-column: 1/1;
+      grid-row: 1/2; }
+    .meet_our_team .about_emma {
+      grid-column: 2/2;
+      grid-row: 1/2; }
+    .meet_our_team .andrea_picture {
+      grid-column: 3/3;
+      grid-row: 1/2; }
+    .meet_our_team .about_andrea {
+      grid-column: 4/4;
+      grid-row: 1/2; }
+    .meet_our_team .tegan_picture {
+      grid-column: 1/1;
+      grid-row: 2/3; }
+    .meet_our_team .about_tegan {
+      grid-column: 2/2;
+      grid-row: 2/3; }
+    .meet_our_team .tracy_picture {
+      grid-column: 3/3;
+      grid-row: 2/3; }
+    .meet_our_team .about_tracy {
+      grid-column: 4/4;
+      grid-row: 2/3; }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px; }
+
+  .navbar {
+    text-align: center; }
+    .navbar label {
+      display: none; }
+    .navbar .search {
+      height: 20px; }
+    .navbar #toggle {
+      display: none; }
+    .navbar a {
+      padding: 20px;
+      color: black;
+      text-decoration: none; }
+      .navbar a:hover {
+        color: #ff728a; }
+
+  .counter {
+    background-color: black; }
+    .counter div {
+      height: 50px; }
+
+  .wrapper {
+    overflow: hidden; }
+
+  .slider {
+    background: url("../images/carousalremake.png") repeat-x;
+    height: 150px;
+    width: 5076px;
+    animation: move 30s linear infinite; }
+
+  @keyframes move {
+    0% {
+      transform: translate3d(0, 0, 0); }
+    100% {
+      transform: translate3d(-3172px, 0, 0); } }
+  .footer li {
+    margin-bottom: 20px;
+    list-style: none; }
+  .footer a {
+    margin-top: 20px;
+    color: black;
+    text-decoration: none; }
+    .footer a:hover {
+      color: #ff728a; }
+
+  .footer2 {
+    background-color: #ff728a;
+    height: 30px;
+    padding: 5px; } }
+
+/*# sourceMappingURL=style_aboutUs.css.map */

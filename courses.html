@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style_courses.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <title>Courses</title>
+    </head>
+    <body>
+            <nav>
+                    <div class="navbar_image">
+                        <a href="index.html"><img src="images/logo.jpg" width="100px" height="50px"></a>
+                    </div>
+                    <div class="navbar">
+                        <label for="toggle">&#9776;</label>
+                        <input type="checkbox" id="toggle">
+                        <div class="menu">
+                            <a href="index.html">HOME</a>
+                            <a href="portfolio.html">PORTFOLIO</a>
+                            <a href="courses.html">COURSES</a>
+                            <a href="about.html">ABOUT</a>
+                            <a href="contactUs.html">CONTACT</a>
+                            <input class="search" type="text" placeholder="Search..">
+                         </div>
+                    </div>
+                  </nav> 
+        <header>
+            <div class="header">
+                <center>
+                    <h1>Our Courses</h1>
+                    <button>Pages</button>
+                    <a><img src="images/icons/right-arrow.png" width="30px"></a>
+                    <button> <a href="portfolio.html">Portfolio</a> </button>
+                </center>
+            </div>
+        </header>
+        <section class="courses_section">
+            <div class="web">
+                <img src="images/icons/screen.png" alt=""> 
+                <h3>Intro to Coding: Web Pages</h3>
+                    <ul>
+                        <li>Code a simple one-page website using HTML and JQuery</li>
+                        <li><strong>Duration: </strong>3 hours </li>
+                        <li><strong>Price:</strong> R250</li>
+                        <button id="add1">
+                            <img src="images/icons/002-plus.png" alt="">
+                        </button>
+                        <button id="remove1">
+                            <img src="images/icons/001-trash-can.png" alt="">
+                        </button>
+                    </ul>
+            </div>
+            <div class="Music">
+                    <img src="images/icons/headphones.png" alt=""> 
+                    <h3>Intro to Coding: Music</h3>
+                        <ul>
+                            <li>Code a song using SonicPi software on a Raspberry Pi computer.</li>
+                            <li> <strong>Duration:</strong>  3 hours </li>
+                            <li> <strong>Price:</strong> R250</li>
+                            <button id="add2">
+                                    <img src="images/icons/002-plus.png" alt="">
+                                </button>
+                                <button id="remove2">
+                                    <img src="images/icons/001-trash-can.png" alt="">
+                                </button>
+                        </ul>
+            </div>
+            <div class="animation">
+                    <img src="images/icons/play_button.png" alt=""> 
+                    <h3>Intro to Coding: Animation</h3>
+                        <ul>
+                            <li>Create a 2D animation using coding language JavaScript.</li>
+                            <li> <strong>Duration:</strong> 3 hours </li>
+                            <li> <strong>Price:</strong> R250</li>
+                            <button id="add3">
+                                    <img src="images/icons/002-plus.png" alt="">
+                                </button>
+                                <button id="remove3">
+                                    <img src="images/icons/001-trash-can.png" alt="">
+                                </button>
+                        </ul>
+            </div>
+            <div class="script">
+                    <img src="images/icons/sitemaps.png" alt=""> 
+                    <h3>Beginner JavaScript</h3>
+                        <ul>
+                            <li>Develop a basic proficiency in programming structures and methods in JavaScript so that you are able to create an interactive web application.</li>
+                            <li>Duration: 6 days </li>
+                            <li>Price: R1800</li>
+                            <button id="add4">
+                                    <img src="images/icons/002-plus.png" alt="">
+                                </button>
+                                <button id="remove4">
+                                    <img src="images/icons/001-trash-can.png" alt="">
+                                </button>
+                        </ul>
+            </div>
+            <div class="front_end">
+                    <img src="images/icons/id_card.png" alt=""> 
+                    <h3>Beginner Front End Web Development</h3>
+                        <ul>
+                            <li>Develop a good proficiency in CSS and an understanding of web design principles so that you are able to create visually pleasing web pages.</li>
+                            <li>Duration: 6 days </li>
+                            <li>Price: R1800</li>
+                            <button id="add5">
+                                    <img src="images/icons/002-plus.png" alt="">
+                                </button>
+                                <button id="remove5">
+                                    <img src="images/icons/001-trash-can.png" alt="">
+                                </button>
+                        </ul>
+            </div>
+            <div class="python">
+                    <img src="images/icons/equalizer.png" alt=""> 
+                    <h3>Beginner Python</h3>
+                        <ul>
+                            <li>Develop a basic proficiency in programming principles and methods in Python.</li>
+                            <li>Duration: 6 days </li>
+                            <li>Price: R1800</li>
+                            <button id="add6">
+                                    <img src="images/icons/002-plus.png" alt="">
+                                </button>
+                                <button id="remove6">
+                                    <img src="images/icons/001-trash-can.png" alt="">
+                                </button>
+                        </ul>
+            </div>
+        </section>
+        <section class="shopping_cart">
+            <center>
+                    <div class="cart">
+                            <div id="s_cart">
+                                <img src="images/icons/shopping-cart.png" alt="">
+                            </div>
+                            <h2>Grand Total</h2>
+                          <div id="course1"></div>
+                          <div id="course2"></div>
+                          <div id="course3"></div>
+                          <div id="course4"></div>
+                          <div id="course5"></div>
+                          <div id="course6"></div>
+                          <div id="total"></div>
+                        </div>
+            </center>
+
+           </section>
+        <section>
+                <div class="subscribe">
+                        <center>
+                            <h2>Subscribe to us</h2>
+                            <p>Individuals and companies may choose to align themselves to our work by becoming a #FriendofCode4CT.</p>
+                            <input type="email" placeholder="Enter Email Address">
+                            <button>submit</button>
+                        </center>
+                 </div>
+        </section>
+        <section class="sponsors">
+                <div class="wrapper">
+                  <div class="slider"></div>
+                 </div>
+        </section>
+        <footer>
+                <div class="footer">
+                        <div class="contact">
+                          <center>
+                              <h2>Contact Us On:</h2>
+                              <div class="footerIcon1">
+                                <img src="images/icons/phone_icon.png" height="50px" width="50px">
+                                </div>
+                                <p class="footerP1" >Tel: 021 685 0991</p>
+        
+                              <div class="footerIcon2">
+                                  <img src="images/icons/email_icon.png" alt="">
+                              </div>
+                              <p class="footerP2">Email: info@code4ct.com </p>
+                
+                              <div class="footerIcon3">
+                                  <img src="images/icons/location_icon.png" alt="">
+                              </div>
+                              <p class="footerP3">Physical address: Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+                            </center>
+                        </div>
+                        <div class="company">
+                            <center>
+                              <ul>
+                                 <li><a href="#">About Us</a></li>
+                                 <li><a href="#">Contact Us</a></li>
+                                 <li><a href="#">Blog</a></li>
+                                 <li><a href="#">About</a></li>
+                                 
+                              </ul>
+                            </center>
+                        </div>
+                        <div class="help">
+                          <center>
+                              <h2>Help & Support:</h2>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                                <li><a href="#">Report Span</a></li>
+                            </ul>
+                          </center>
+                        </div>
+                    </div>
+                    <div class="footer2">
+                            <p>
+                                copyright @2018
+                            </p>
+                        </div>
+        </footer>
+        
+
+
+        <script src="JavaScript/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,206 @@
+/* for mobile view */
+@media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
+  h1, h2 {
+    color: #ff728a; }
+
+  .nav_bar {
+    text-align: right; }
+    .nav_bar img {
+      float: left; }
+
+  .menu {
+    margin: 0 30px 0 0;
+    display: none; }
+    .menu a {
+      text-decoration: none;
+      color: black;
+      margin: 0 10px;
+      line-height: 70px;
+      display: block;
+      text-align: center;
+      clear: right; }
+    .menu a:hover {
+      color: #e38f84; }
+
+  label {
+    margin: 0 40px 0 0;
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    float: right; }
+
+  #toggle {
+    display: none; }
+
+  #toggle:checked + .menu {
+    display: block; }
+
+  input {
+    margin-left: 20%; }
+
+  button img {
+    width: 12px;
+    height: 12px; }
+
+  .wrapper {
+    overflow: hidden; }
+
+  .slider {
+    background: url("../images/carousalremake.png") repeat-x;
+    height: 150px;
+    width: 5076px;
+    animation: move 30s linear infinite; }
+
+  @keyframes move {
+    0% {
+      transform: translate3d(0, 0, 0); }
+    100% {
+      transform: translate3d(-3172px, 0, 0); } }
+  .courses_section div {
+    text-align: center;
+    border: solid 2px #ff728a;
+    margin-top: 10px; }
+    .courses_section div img {
+      margin-top: 10px; }
+  .courses_section li {
+    margin-top: 10px; }
+
+  .footer li {
+    margin-bottom: 20px;
+    list-style: none; }
+  .footer a {
+    margin-top: 20px;
+    color: black;
+    text-decoration: none; }
+    .footer a:hover {
+      color: #ff728a; }
+
+  .footer2 {
+    background-color: #ff728a;
+    height: 30px;
+    padding: 5px; } }
+/* for laptop view */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  h1, h2 {
+    color: #ff728a; }
+
+  .header {
+    height: 160px; }
+    .header h1 {
+      margin-top: 10px; }
+    .header button {
+      background-color: #0000005e;
+      border: none;
+      color: black;
+      padding: 10px;
+      border-radius: 10px; }
+      .header button:hover {
+        background-color: #ff728a;
+        padding-right: 30px;
+        color: white; }
+      .header button a {
+        color: white;
+        text-decoration: none; }
+
+  .navbar {
+    text-align: center; }
+    .navbar label {
+      display: none; }
+    .navbar .search {
+      height: 20px; }
+    .navbar #toggle {
+      display: none; }
+    .navbar a {
+      padding: 20px;
+      color: black;
+      text-decoration: none; }
+      .navbar a:hover {
+        color: #ff728a; }
+
+  .courses_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    margin-top: 20px; }
+    .courses_section div {
+      border: solid #ff728a 2px;
+      padding: 10px; }
+    .courses_section li {
+      margin-bottom: 20px;
+      list-style-type: none; }
+
+  .subscribe h2 {
+    color: #ff728a; }
+  .subscribe input {
+    padding: 20px;
+    border: solid 2px #ff728a;
+    margin-bottom: 20px;
+    background: transparent; }
+  .subscribe button {
+    background-color: #0000005e;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px; }
+    .subscribe button:hover {
+      background-color: #ff728a;
+      padding-right: 30px; }
+
+  .wrapper {
+    overflow: hidden; }
+
+  .slider {
+    background: url("../images/carousalremake.png") repeat-x;
+    height: 150px;
+    width: 5076px;
+    animation: move 30s linear infinite; }
+
+  @keyframes move {
+    0% {
+      transform: translate3d(0, 0, 0); }
+    100% {
+      transform: translate3d(-3172px, 0, 0); } }
+  .shopping_cart .cart {
+    background-color: grey;
+    margin-top: 20px;
+    border-radius: 10px; }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px; }
+    .footer .contact {
+      grid-column: 1/1;
+      grid-row: 1/2; }
+    .footer .company {
+      grid-column: 2/2;
+      grid-row: 1/2;
+      margin-top: 70px; }
+      .footer .company ul {
+        margin-right: 110px; }
+    .footer .help {
+      grid-column: 3/3;
+      grid-row: 1/2; }
+      .footer .help ul {
+        margin-right: 110px; }
+    .footer li {
+      margin-bottom: 20px;
+      text-align: center; }
+    .footer a {
+      padding-left: 70px;
+      margin-left: 20px;
+      margin-top: 20px;
+      color: black;
+      text-decoration: none; }
+      .footer a:hover {
+        color: #ff728a; }
+
+  .footer2 {
+    background-color: #ff728a;
+    height: 30px;
+    padding: 5px; } }
+
+/*# sourceMappingURL=style_courses.css.map */
