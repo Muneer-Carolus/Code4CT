@@ -1,8 +1,10 @@
+html {
+    scroll-behavior: smooth;
+  }
 /* for mobile view */
 @media only screen and (min-device-width:1px) and (max-device-width:640px){
           // styling Navbar for mobile view
             // styling nav
-
             .menu{
                 margin: 0 30px 0 0;
                 display: none; 

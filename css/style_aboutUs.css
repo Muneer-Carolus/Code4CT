@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 /* for mobile view */
 @media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
   .menu {
