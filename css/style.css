@@ -1,24 +1,28 @@
+html {
+  scroll-behavior: smooth; }
+
 /* for mobile view */
 @media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
-  .container .nav_bar {
-    text-align: right; }
-    .container .nav_bar img {
-      float: left; }
   .container .menu {
-    margin: 0 30px 0 0;
-    display: none; }
+    margin: 0 30px 0 30px;
+    display: none;
+    position: fixed;
+    width: 75%;
+    border: solid 2px black;
+    background-color: rgba(0, 0, 0, 0.51); }
     .container .menu a {
       text-decoration: none;
-      color: black;
+      color: white;
       margin: 0 10px;
+      width: 100%;
       line-height: 70px;
       display: block;
       text-align: center;
-      clear: right; }
-    .container .menu a:hover {
-      color: #e38f84; }
+      clear: right;
+      border-radius: 2px; }
+      .container .menu a:hover {
+        color: #e38f84; }
   .container label {
-    margin: 0 40px 0 0;
     display: block;
     cursor: pointer;
     width: 26px;
@@ -37,18 +41,29 @@
   .container #intro {
     height: 50vh;
     width: 100%; }
+    .container #intro p {
+      font-size: 15px; }
     .container #intro button {
       background-color: #0000005e;
       border: none;
       color: white;
-      padding: 10px;
+      margin-right: 5px;
       border-radius: 10px; }
       .container #intro button:hover {
         background-color: #ff728a;
         padding-right: 30px; }
       .container #intro button a {
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 12px; }
+  .container .intro {
+    z-index: 1; }
+  .container .about {
+    margin-top: 20px; }
+  .container .about_text h2 {
+    margin-top: 20px; }
+  .container .about_text hr {
+    border: #ff728a solid 1px; }
   .container .footer2 {
     background-color: #ff728a;
     height: 30px;
@@ -61,7 +76,7 @@
     background: url("../images/carousalremake.png") repeat-x;
     height: 150px;
     width: 5076px;
-    animation: move 30s linear infinite; }
+    animation: move 90s linear infinite; }
   @keyframes move {
     0% {
       transform: translate3d(0, 0, 0); }
@@ -90,7 +105,44 @@
     .container #intro button {
       width: 50px;
       height: 30px;
-      font-size: 10px; } }
+      font-size: 10px; }
+  .container .meet_our_team hr {
+    width: 20%;
+    margin-left: 10px;
+    border: #ff728a solid 1px; }
+  .container .meet_our_team p {
+    text-align: center; }
+  .container .scroll_button a {
+    background-color: grey;
+    color: white;
+    padding: 7px;
+    border-radius: 2px;
+    text-decoration: none;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 5000s; }
+  .container .footer img {
+    height: 30px;
+    width: 30px; }
+  .container .footer .company li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 20px; }
+  .container .footer .company a {
+    text-decoration: none;
+    color: black; }
+    .container .footer .company a:hover {
+      color: #ff728a; }
+  .container .footer .help li {
+    text-align: center;
+    list-style-type: none;
+    padding: 10px; }
+  .container .footer .help a {
+    text-decoration: none;
+    color: black; }
+    .container .footer .help a:hover {
+      color: #ff728a; } }
 /* for tablet view */
 /* for laptop view */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
@@ -106,7 +158,8 @@
     .container .intro {
       grid-column: 1/7;
       grid-row: 2/3;
-      border-radius: 10px; }
+      border-radius: 10px;
+      height: 100px; }
     .container #intro {
       grid-column: 1/7;
       grid-row: 2/3; }
@@ -266,7 +319,7 @@
       grid-gap: 10/11;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(1, 1fr); }
+      grid-template-rows: repeat(2, auto); }
       .container .footer .contact {
         grid-column: 1/1;
         grid-row: 1/2;
@@ -281,11 +334,17 @@
       .container .footer .company {
         grid-column: 2/2;
         grid-row: 1/2; }
+      .container .footer .scroll_button {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        text-align: right; }
     .container .footer2 {
       grid-column: 1/7;
-      grid-row: 11/12;
+      grid-row: 11/12; }
+    .container .footer2 {
       background-color: #ff728a;
-      border: 2px black solid; }
+      height: 30px;
+      padding: 5px; }
     .container .navbar {
       text-align: center; }
       .container .navbar label {
@@ -302,7 +361,7 @@
           color: #ff728a; }
     .container .intro {
       width: 100%;
-      height: 480px;
+      height: 600px;
       overflow: hidden;
       position: relative; }
     .container #intro {
@@ -345,7 +404,7 @@
       background: url("../images/carousalremake.png") repeat-x;
       height: 150px;
       width: 5076px;
-      animation: move 30s linear infinite; }
+      animation: move 90s linear infinite; }
   @keyframes move {
     0% {
       transform: translate3d(0, 0, 0); }
@@ -385,12 +444,22 @@
         color: red; }
     .container .footer .help li {
       text-align: center;
+      list-style-type: none;
       padding: 10px; }
     .container .footer .help a {
       text-decoration: none;
       color: black; }
       .container .footer .help a:hover {
-        color: red; } }
+        color: red; }
+    .container .footer .scroll_button a {
+      background-color: grey;
+      color: white;
+      padding: 7px;
+      border-radius: 2px;
+      text-decoration: none;
+      animation-name: scroll;
+      animation-iteration-count: infinite;
+      animation-duration: 5000s; } }
 @media only screen and (min-device-width: 1440px) and (max-device-width: 2561px) and (-webkit-min-device-pixel-ratio: 2) {
   h1, h2 {
     color: #ff728a; }
@@ -561,10 +630,20 @@
         .container .meet_our_team .footer .company {
           grid-column: 2/2;
           grid-row: 1/2; }
-        .container .meet_our_team .footer .footer2 {
-          background-color: #ff728a;
-          height: 30px;
-          padding: 5px; }
+      .container .meet_our_team .footer2 {
+        background-color: #ff728a;
+        height: 30px;
+        padding: 5px;
+        display: inline-block; }
+        .container .meet_our_team .footer2 a {
+          background-color: grey;
+          color: white;
+          padding: 7px;
+          border-radius: 2px;
+          text-decoration: none;
+          animation-name: scroll;
+          animation-iteration-count: infinite;
+          animation-duration: 2s; }
       .container .meet_our_team .navbar {
         display: inline;
         padding: 30px; }

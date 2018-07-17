@@ -1,25 +1,26 @@
 @media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
-  .nav_bar {
-    text-align: right; }
-    .nav_bar img {
-      float: left; }
-
   .menu {
     margin: 0 30px 0 0;
-    display: none; }
+    display: none;
+    position: fixed;
+    width: 75%;
+    border: solid 2px black;
+    background-color: rgba(0, 0, 0, 0.51); }
     .menu a {
       text-decoration: none;
-      color: black;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.51);
       margin: 0 10px;
+      width: 100%;
       line-height: 70px;
       display: block;
       text-align: center;
-      clear: right; }
-    .menu a:hover {
-      color: #e38f84; }
+      clear: right;
+      border-radius: 2px; }
+      .menu a:hover {
+        color: #e38f84; }
 
   label {
-    margin: 0 40px 0 0;
     display: block;
     cursor: pointer;
     width: 26px;
@@ -41,6 +42,22 @@
   h1, h2 {
     color: #ff728a; }
 
+  button {
+    background-color: #0000005e;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px; }
+    button:hover {
+      background-color: #ff728a;
+      padding-right: 30px; }
+    button a {
+      margin-top: 20px;
+      color: black;
+      text-decoration: none; }
+      button a:hover {
+        white: #ff728a; }
+
   .footer li {
     margin-bottom: 20px;
     list-style: none; }
@@ -50,6 +67,15 @@
     text-decoration: none; }
     .footer a:hover {
       color: #ff728a; }
+  .footer .scroll_button a {
+    background-color: grey;
+    color: white;
+    padding: 7px;
+    border-radius: 2px;
+    text-decoration: none;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 5000s; }
 
   .footer2 {
     background-color: #ff728a;
@@ -87,6 +113,12 @@
     button:hover {
       background-color: #ff728a;
       padding-right: 30px; }
+    button a {
+      margin-top: 20px;
+      color: black;
+      text-decoration: none; }
+      button a:hover {
+        white: #ff728a; }
 
   iframe {
     width: 100%; }
@@ -116,6 +148,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto); }
+    .footer .scroll_button {
+      grid-column: 1/4;
+      grid-row: 2/3;
+      text-align: right; }
 
   .footer li {
     margin-bottom: 20px;
@@ -125,6 +161,22 @@
     color: black;
     text-decoration: none; }
     .footer a:hover {
-      color: #ff728a; } }
+      color: #ff728a; }
+  .footer .scroll_button a {
+    background-color: grey;
+    color: white;
+    padding: 7px;
+    border-radius: 2px;
+    text-decoration: none;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 5000s; }
+
+  .footer2 {
+    background-color: #ff728a;
+    padding: 10px;
+    text-align: right; } }
+html {
+  scroll-behavior: smooth; }
 
 /*# sourceMappingURL=style_contactUs.css.map */

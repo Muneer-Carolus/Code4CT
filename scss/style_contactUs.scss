@@ -1,33 +1,31 @@
 // styling for mobile view
 @media only screen and (min-device-width:1px) and (max-device-width:640px){
     // styling nav
-    .nav_bar {
-        text-align: right;
-        img {
-          float: left;
-        }
-      }
-      // .menu {
-      
-      // }
-      .menu{
+
+    .menu{
         margin: 0 30px 0 0;
-        display: none;
+        display: none; 
+        position: fixed;
+        width: 75%; 
+        border: solid 2px black;
+        background-color: rgba(0, 0, 0, 0.51);
         a {
           text-decoration: none;
-          color: black;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.51);
           margin: 0 10px;
+          width: 100%;
           line-height: 70px;
           display: block;
           text-align: center;
           clear: right;
-        }
-        a:hover {
-          color: #e38f84;
+          border-radius: 2px;
+          &:hover {
+            color: #e38f84;
+          }
         }
       }
       label {
-        margin: 0 40px 0 0;
         display: block;
         cursor: pointer;
         width: 26px;
@@ -53,7 +51,26 @@
               h1, h2{
                 color: rgb(255, 114, 138) ;
             }
-                    //   styling the footer
+            button{
+                background-color: #0000005e;
+                border: none;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+                &:hover{
+                   background-color: rgb(255, 114, 138) ;
+                   padding-right: 30px;
+                    }
+                    a{
+                      margin-top: 20px;
+                      color:black;
+                      text-decoration: none;
+                      &:hover{
+                          white:rgb(255, 114, 138);
+                      }
+                  }
+               }
+        //   styling the footer
         .footer{
             li{
                 margin-bottom: 20px;
@@ -70,6 +87,18 @@
                     color:rgb(255, 114, 138);
                 }
             }
+            .scroll_button{
+                a {
+                  background-color: grey;
+                  color: white;
+                  padding: 7px;
+                  border-radius: 2px;
+                  text-decoration: none;
+                  animation-name: scroll;
+                  animation-iteration-count: infinite;
+                  animation-duration: 5000s;
+                 }
+              }
         }
     .footer2{
         background-color:  rgb(255, 114, 138) ;
@@ -118,6 +147,14 @@
                  background-color: rgb(255, 114, 138) ;
                  padding-right: 30px;
                   }
+                  a{
+                    margin-top: 20px;
+                    color:black;
+                    text-decoration: none;
+                    &:hover{
+                        white:rgb(255, 114, 138);
+                    }
+                }
              }
              iframe{
                  width: 100%;
@@ -152,17 +189,20 @@
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
                 grid-template-rows: repeat(1,auto);
+                .scroll_button{
+                    grid-column: 1/4;
+                    grid-row: 2/3;
+                    text-align: right;
+                  }
             }
             // styling footer
         .footer{
             li{
                 margin-bottom: 20px;
                 list-style: none;
-                // text-align: center;
+                
             }
             a{
-                // padding-left: 70px;
-                // margin-left: 20px;
                 margin-top: 20px;
                 color:black;
                 text-decoration: none;
@@ -170,5 +210,25 @@
                     color:rgb(255, 114, 138);
                 }
             }
+            .scroll_button{
+                a {
+                  background-color: grey;
+                  color: white;
+                  padding: 7px;
+                  border-radius: 2px;
+                  text-decoration: none;
+                  animation-name: scroll;
+                  animation-iteration-count: infinite;
+                  animation-duration: 5000s;
+                 }
+              }
+        }
+        .footer2{
+            background-color: rgb(255, 114, 138);
+            padding: 10px;
+            text-align: right;
         }
 }
+html {
+    scroll-behavior: smooth;
+  }
