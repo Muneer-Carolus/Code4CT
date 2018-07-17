@@ -40,7 +40,7 @@
     width: 12px;
     height: 12px; }
 
-  h1, h2 {
+  h1, h2, h3 {
     color: #ff728a; }
 
   button {
@@ -78,6 +78,13 @@
     animation-iteration-count: infinite;
     animation-duration: 5000s; }
 
+  hr {
+    border: #ff728a solid 1px; }
+
+  #theTeam hr {
+    border: #ff728a solid 1px;
+    margin-right: 150px; }
+
   .footer2 {
     background-color: #ff728a;
     height: 30px;
@@ -88,7 +95,7 @@
     color: #ff728a; }
 
   hr {
-    color: #ff728a; }
+    border: #ff728a solid 1px; }
 
   button {
     background-color: #0000005e;

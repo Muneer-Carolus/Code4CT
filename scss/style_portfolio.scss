@@ -50,13 +50,12 @@
     }
   }
  .slidshow{
-    display: flex;
-    overflow: hidden;
+    display: block;
      img{
-         padding: 10px;
+         padding: 5px;
          border-radius: 20px;
          height: 250px;
-         width: 200px;
+         width: 100%;
      }  
  }
  .wrapper {
@@ -117,8 +116,8 @@
 // styling for footer
  .footer{
   img{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
   .company{
     

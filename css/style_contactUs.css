@@ -58,9 +58,15 @@
       button a:hover {
         white: #ff728a; }
 
+  .findUs li {
+    margin-bottom: 20px;
+    list-style-type: none; }
+
+  .footer ul {
+    list-style-type: none; }
   .footer li {
     margin-bottom: 20px;
-    list-style: none; }
+    list-style-type: none; }
   .footer a {
     margin-top: 20px;
     color: black;
@@ -76,6 +82,9 @@
     animation-name: scroll;
     animation-iteration-count: infinite;
     animation-duration: 5000s; }
+
+  hr {
+    border: #ff728a solid 1px; }
 
   .footer2 {
     background-color: #ff728a;
@@ -102,7 +111,7 @@
     color: #ff728a; }
 
   hr {
-    color: #ff728a; }
+    border: #ff728a solid 1px; }
 
   button {
     background-color: #0000005e;
@@ -174,8 +183,7 @@
 
   .footer2 {
     background-color: #ff728a;
-    padding: 10px;
-    text-align: right; } }
+    padding: 10px; } }
 html {
   scroll-behavior: smooth; }
 

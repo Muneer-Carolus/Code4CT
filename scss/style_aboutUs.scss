@@ -49,7 +49,7 @@
                 }
               }
      // styling the heading tags
-      h1, h2{
+      h1, h2,h3{
         color: rgb(255, 114, 138) ;
     }
     button{
@@ -99,6 +99,15 @@
                  }
               }
         }
+        hr{
+            border: rgb(255, 114, 138) solid 1px;
+          }
+          #theTeam{
+            hr{
+                border: rgb(255, 114, 138) solid 1px;
+                margin-right: 150px;
+              }
+          }
     .footer2{
         background-color:  rgb(255, 114, 138) ;
         height: 30px;
@@ -112,8 +121,8 @@
             color: rgb(255, 114, 138) ;
         }
         hr{
-            color: rgb(255, 114, 138) ;
-        }
+            border: rgb(255, 114, 138) solid 1px;
+          }
         // styling for buttons
         button{
             background-color: #0000005e;

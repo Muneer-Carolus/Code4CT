@@ -44,13 +44,12 @@
     height: 12px; }
 
   .slidshow {
-    display: flex;
-    overflow: hidden; }
+    display: block; }
     .slidshow img {
-      padding: 10px;
+      padding: 5px;
       border-radius: 20px;
       height: 250px;
-      width: 200px; }
+      width: 100%; }
 
   .wrapper {
     overflow: hidden; }
@@ -99,8 +98,8 @@
       padding-right: 30px; }
 
   .footer img {
-    height: 40px;
-    width: 40px; }
+    height: 30px;
+    width: 30px; }
   .footer .company li {
     list-style-type: none;
     text-align: center;

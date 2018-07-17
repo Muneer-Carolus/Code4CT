@@ -78,7 +78,7 @@
         background: url("../images/carousalremake.png") repeat-x;
         height: 150px;
         width: 5076px;
-        animation: move 30s linear infinite;
+        animation: move 60s linear infinite;
       }
       @keyframes move{
         0%{
@@ -101,16 +101,31 @@
               margin-top: 10px;
           }
       }
+      .shopping_cart{
+          padding: 10px;
+      }
+      .subscribe{
+          background-color: rgb(255, 114, 138);
+          border-radius: 2px;
+          border: black 2px solid;
+          input{
+              padding: 5px;
+          }
+      }
     //   styling the footer
      .footer{
+         img{
+             width: 40px;
+             height: 40px;
+         }
+         hr{
+            border: rgb(255, 114, 138) solid 1px;
+         }
         li{
             margin-bottom: 20px;
             list-style: none;
-            // text-align: center;
         }
         a{
-            // padding-left: 70px;
-            // margin-left: 20px;
             margin-top: 20px;
             color:black;
             text-decoration: none;
